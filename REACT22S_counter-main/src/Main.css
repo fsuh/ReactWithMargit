@@ -1,0 +1,56 @@
+main {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main > div {
+  margin: 0 auto;
+}
+
+.counter {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(208, 208, 208);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+}
+
+.odd {
+  background-color: rgb(79, 171, 252);
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+}
+
+.even {
+  background-color: rgb(0, 43, 80);
+  color: white;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+}
+
+.circle {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(208, 208, 208);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+
+}
