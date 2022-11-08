@@ -6,12 +6,15 @@ import {BsSuitHeartFill} from 'react-icons/bs'
 
         return (
         <div className="Cards">
+            <h2 className="title">{props.name}</h2>
             <img src={`https://source.unsplash.com/500x400/?${props.name}`} alt={props.name} />
             <button className="removeCard" onClick={props.removeCard}>x</button>
-            <h2 className="title">{props.name}</h2>
+            <div className='btns'>
             <button className="reduceLikes" onClick={props.reduceLikes}>-</button>
-            <BsSuitHeartFill /><span>{props.likes}</span>
+            <p><BsSuitHeartFill /><span>{props.likes}</span></p>
+            
             <button className="addLikes" onClick={props.addLikes}>+</button>
+            </div>
         </div>
         )
 

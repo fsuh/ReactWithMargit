@@ -36,22 +36,23 @@
 .animalList {
  display: flex;
  flex-flow: row wrap;
- justify-content: space-between;
+ justify-content: space-around;
  align-items: center;
 }
 
 img {
-  border: 1px solid #ccc;
+  border-radius: 10px 10px 0 0;
   box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
   max-width: 100%;
-  width: 200px;
+  width: 220px;
   height: 200px;
-  margin-bottom: 10px;
   filter: grayscale(100%)
+  
 }
 
 img:hover{
   filter:none
+  
 }
 
 .title{
@@ -68,13 +69,40 @@ img:hover{
 }
 
 .removeCard{
- position:absolute;
+  background-color: black;
+  color: yellow;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  right:20px;
+  bottom:180px;
  
 
 }
 
-.addLikes{
+/*.addLikes{
   position: relative;
   left: 30px;
+}*/
+input[type=text]{
+  width: 20%;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.btns{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  height: 30px;
+  width: 220px;
+  margin-bottom: 40px;
 }
 
+button{
+  height: 30px;
+  width: 30px;
+}

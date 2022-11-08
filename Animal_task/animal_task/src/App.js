@@ -1,4 +1,4 @@
-import React, {Component, useDebugValue} from 'react';
+import React, {Component} from 'react';
 import './App.css';
 import Cards from './Cards'
 import {animals} from './animals';
@@ -31,6 +31,22 @@ class App extends Component{
       };
     });
   };
+  
+  reduceHandler = (name) => {
+    this.setState(state => {
+      const updatedArray = state.animals.map((animal) => {
+        if(animal.name === name) {
+          return {...animal, likes: animal.likes - 1};
+        } else {
+          return animal;
+        }
+
+      });
+      return {
+        animals: updatedArray,
+      };
+    });
+  };
 
   searchHandler = event => {
     this.setState({search: event.target.value})
@@ -49,8 +65,8 @@ class App extends Component{
           name={animal.name}
           likes={animal.likes}
           removeCard={() =>this.removeHandler(animal.name)}
-          addLikes={() =>this.likesHandler(animal.name)}
-          reduceLikes={() =>this.likesHandler(animal.name)}
+          addLikes={() =>this.addHandler(animal.name)}
+          reduceLikes={() =>this.reduceHandler(animal.name)}
         />
       )
     })
