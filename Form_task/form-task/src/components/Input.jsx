@@ -8,6 +8,7 @@ function Input (props){
         type={props.type} 
         placeholder={props.placeholder} 
         name={props.name} 
+        id={props.name}
         />
         </div>
     )

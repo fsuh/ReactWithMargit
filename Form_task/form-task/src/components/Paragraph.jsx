@@ -3,7 +3,7 @@ import React from 'react'
 function Paragraph(props) {
   return (
     <div>
-        <p>{props.children}</p>
+        <p>{props.children} {props.name}</p>
     </div>
   )
 }
